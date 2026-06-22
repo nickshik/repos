@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Эл Лоулит | Тетрадь Смерти</title>
+
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <h1>Эл Лоулит</h1>
+
+        <!-- Меню навигации -->
+        <nav>
+            <ul>
+                <li><a href="#about">О персонаже</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#facts">Факты</a></li>
+                <li><a href="#feedback">Отзыв</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+
+        <h2>Величайший детектив мира</h2>
+
+        <p>
+            Эл Лоулит — главный противник Киры
+            в аниме «Тетрадь Смерти».
+        </p>
+
+        <button onclick="showInfo()">
+            Узнать интересный факт
+        </button>
+
+    </section>
+
+    <!-- Информация -->
+    <section id="about">
+
+        <h2>О персонаже</h2>
+
+        <p>
+            Эл — легендарный детектив, который
+            раскрывает самые сложные преступления.
+            Его настоящее имя — L Lawliet.
+        </p>
+
+        <h3>Особенности персонажа:</h3>
+
+        <ul>
+            <li>Высочайший интеллект</li>
+            <li>Любовь к сладкому</li>
+            <li>Странная поза при сидении</li>
+            <li>Выдающиеся дедуктивные способности</li>
+        </ul>
+
+        <p>
+            Подробнее можно прочитать на
+            <a href="https://deathnote.fandom.com/wiki/L_Lawliet"
+               target="_blank">
+                сайте Death Note Wiki
+            </a>.
+        </p>
+
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery">
+
+        <h2>Галерея</h2>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/e6/5f/0d/e65f0df5f160df80d3b29b912ba1f4e0.jpg" alt="Эл">
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/21/af/32/21af32501493f9540fcb0e9d22ac046c.jpg" alt="Эл">
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/b1/e1/71/b1e17117999273ca8c26335e2fa7ffe2.jpg" alt="Эл">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Таблица -->
+    <section id="facts">
+
+        <h2>Информация о персонаже</h2>
+
+        <table>
+
+            <tr>
+                <th>Характеристика</th>
+                <th>Значение</th>
+            </tr>
+
+            <tr>
+                <td>Имя</td>
+                <td>L Lawliet</td>
+            </tr>
+
+            <tr>
+                <td>Профессия</td>
+                <td>Детектив</td>
+            </tr>
+
+            <tr>
+                <td>Любимая еда</td>
+                <td>Торты и сладости</td>
+            </tr>
+
+            <tr>
+                <td>Вселенная</td>
+                <td>Тетрадь Смерти</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- Форма -->
+    <section id="feedback">
+
+        <h2>Оставить отзыв</h2>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Введите имя"
+                required>
+
+            <input
+                type="email"
+                placeholder="Введите email"
+                required>
+
+            <textarea
+                placeholder="Ваш отзыв"
+                rows="5">
+            </textarea>
+
+            <button type="submit">
+                Отправить
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+
+        <p>
+            © 2026 Фан-сайт Эла из аниме
+            «Тетрадь Смерти»
+        </p>
+
+    </footer>
+
+    <script>
+        function showInfo() {
+            alert(
+                "Эл входит в число самых умных персонажей аниме."
+            );
+        }
+    </script>
+
+</body>
+</html>

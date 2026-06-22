@@ -1,0 +1,188 @@
+/* Плавная прокрутка */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Сброс отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основной стиль сайта */
+body {
+    background: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Шапка */
+header {
+    background: #0d1117;
+    border-bottom: 2px solid #00bfff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+/* Заголовок */
+header h1 {
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+/* Навигация */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+/* Главный экран */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+
+    animation: fadeIn 1.5s;
+}
+
+.hero h2 {
+    color: #00bfff;
+    font-size: 40px;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* Кнопки */
+button {
+    background: #00bfff;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #00bfff;
+}
+
+/* Секции */
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+section h2 {
+    color: #00bfff;
+    margin-bottom: 20px;
+}
+
+/* Список */
+ul {
+    margin-left: 25px;
+}
+
+/* Галерея */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid #00bfff;
+
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00bfff;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #00bfff;
+    color: black;
+}
+
+td,
+th {
+    border: 1px solid #00bfff;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Форма */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #00bfff;
+    background: #111;
+    color: white;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0d1117;
+    border-top: 2px solid #00bfff;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
